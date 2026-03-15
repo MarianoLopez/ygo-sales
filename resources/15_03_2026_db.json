@@ -1,0 +1,292 @@
+[
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN036",
+    "nombre": "Darklord Eveningstar",
+    "precio": "$49,875",
+    "precio usd": "35",
+    "rareza": "Starlight Rare",
+    "total": "$49,875"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN036",
+    "nombre": "Darklord Eveningstar",
+    "precio": "$14,250",
+    "precio usd": "10",
+    "rareza": "Secret Rare",
+    "total": "$14,250"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN044",
+    "nombre": "Exosister Karmael",
+    "precio": "$75,525",
+    "precio usd": "53",
+    "rareza": "Starlight Rare",
+    "total": "$75,525"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN044",
+    "nombre": "Exosister Karmael",
+    "precio": "$7,125",
+    "precio usd": "5",
+    "rareza": "Ultra Rare",
+    "total": "$7,125"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN066",
+    "nombre": "Exosister Betrayal",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN040",
+    "nombre": "Elfnote Seraphim Strelitzia",
+    "precio": "$7,125",
+    "precio usd": "5",
+    "rareza": "Ultra Rare",
+    "total": "$7,125"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN012",
+    "nombre": "Elfnote Fortuna",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN011",
+    "nombre": "Elfnote Tinia",
+    "precio": "$7,125",
+    "precio usd": "5",
+    "rareza": "Ultra Rare",
+    "total": "$7,125"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN056",
+    "nombre": "Elfnotes: Welcome Home",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN082",
+    "nombre": "Jade Dragon Mech",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$2,850"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN017",
+    "nombre": "Rex, Ride Fur Hire",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$2,850"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN001",
+    "nombre": "Rokket Loader",
+    "precio": "$7,125",
+    "precio usd": "5",
+    "rareza": "Ultra Rare",
+    "total": "$7,125"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN042",
+    "nombre": "Zalen the Shackled Dragon",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN039",
+    "nombre": "Junora the Power Patron of Tuning",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$2,850"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN019",
+    "nombre": "Darklord Djehuty",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN016",
+    "nombre": "Highness Archfiend",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$2,850"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN008",
+    "nombre": "Crimson Blader/Assault Mode",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN007",
+    "nombre": "Junk Warrior/Assault Mode",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN047",
+    "nombre": "Borrelshroud Dragon",
+    "precio": "$7,125",
+    "precio usd": "5",
+    "rareza": "Ultra Rare",
+    "total": "$7,125"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN032",
+    "nombre": "Borreload Fatalflare Dragon",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN099",
+    "nombre": "Conduction Warrior Linear Magnum Plus Minus",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$2,850"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN004",
+    "nombre": "Tellusion the Magna Warrior",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN035",
+    "nombre": "Artmage Non-Finito",
+    "precio": "$7,125",
+    "precio usd": "5",
+    "rareza": "Ultra Rare",
+    "total": "$7,125"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN068",
+    "nombre": "Nightmare Hands",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$2,850"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN051",
+    "nombre": "Rescue-ACE Arbitrator",
+    "precio": "$4,275",
+    "precio usd": "3",
+    "rareza": "Secret Rare",
+    "total": "$4,275"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN084",
+    "nombre": "Mercurium the Living Quicksilver",
+    "precio": "$7,125",
+    "precio usd": "5",
+    "rareza": "Ultra Rare",
+    "total": "$14,250"
+  },
+  {
+    "cantidad": "1",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN022",
+    "nombre": "Super B.E.S. Metal Slave",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$2,850"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN021",
+    "nombre": "B.E.S. Derringer Core",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  },
+  {
+    "cantidad": "2",
+    "cotizacion": "1425",
+    "expansion": "BPRO-EN070",
+    "nombre": "Borrel Reboot",
+    "precio": "$2,850",
+    "precio usd": "2",
+    "rareza": "Super Rare",
+    "total": "$5,700"
+  }
+]
