@@ -13,22 +13,40 @@ import type { SaleItem } from '../../data/items'
 
 const columnHelper = createColumnHelper<SaleItem>()
 
+function parsePrecio(precio: string): number {
+  return parseFloat((precio || '').replace(/[$,]/g, '')) || 0
+}
+
 const columns = [
+  columnHelper.accessor('img_url', {
+    header: '',
+    enableSorting: false,
+    cell: (info) => {
+      const url = info.getValue()
+      const nombre = info.row.original.nombre ?? ''
+      if (!url) return <span className="text-slate-500 text-sm">—</span>
+      return (
+        <img
+          src={url}
+          alt={nombre}
+          className="w-24 h-24 sm:w-32 sm:h-32 rounded object-cover bg-slate-700"
+        />
+      )
+    },
+  }),
   columnHelper.accessor('nombre', {
     header: 'Nombre',
-    cell: (info) => info.getValue(),
-  }),
-  columnHelper.accessor('rareza', {
-    header: 'Rareza',
     cell: (info) => info.getValue(),
   }),
   columnHelper.accessor('cantidad', {
     header: 'Cantidad',
     cell: (info) => info.getValue(),
   }),
-  columnHelper.accessor('precio', {
+  columnHelper.accessor((row) => parsePrecio(row.precio), {
+    id: 'precio',
     header: 'Precio',
-    cell: (info) => info.getValue(),
+    cell: (info) => info.row.original.precio,
+    sortingFn: 'basic',
   }),
 ]
 
@@ -64,15 +82,15 @@ export function ItemsTable({ data, globalFilter, onGlobalFilterChange }: ItemsTa
 
   return (
     <div className="w-full space-y-4">
-      <div className="overflow-x-auto rounded-lg border border-slate-200">
-        <table className="min-w-full divide-y divide-slate-200">
-          <thead className="bg-slate-100">
+      <div className="overflow-x-auto rounded-lg border border-slate-600">
+        <table className="min-w-full divide-y divide-slate-600">
+          <thead className="bg-slate-700">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
                   <th
                     key={header.id}
-                    className="px-4 py-3 text-left text-sm font-medium text-slate-700 whitespace-nowrap"
+                    className="px-4 py-3 text-left text-sm font-medium text-slate-200 whitespace-nowrap first:w-24 first:sm:w-32"
                   >
                     <div
                       className={
@@ -93,15 +111,21 @@ export function ItemsTable({ data, globalFilter, onGlobalFilterChange }: ItemsTa
               </tr>
             ))}
           </thead>
-          <tbody className="bg-white divide-y divide-slate-200">
+          <tbody className="bg-slate-800 divide-y divide-slate-600">
             {table.getRowModel().rows.map((row) => (
-              <tr key={row.id} className="hover:bg-slate-50">
+              <tr key={row.id} className="hover:bg-slate-700/50">
                 {row.getVisibleCells().map((cell) => (
                   <td
                     key={cell.id}
-                    className="px-4 py-3 text-sm text-slate-900 whitespace-nowrap"
+                    className="px-4 py-3 text-sm text-slate-100 align-middle first:w-24 first:sm:w-32 first:py-2"
                   >
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    {cell.column.id === 'nombre' ? (
+                      <span className="font-semibold text-white">
+                        {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                      </span>
+                    ) : (
+                      flexRender(cell.column.columnDef.cell, cell.getContext())
+                    )}
                   </td>
                 ))}
               </tr>
