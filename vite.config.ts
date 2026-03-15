@@ -6,6 +6,6 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  // Para GitHub Pages: ajustar base si el repo es 'Yugi-Sales' y se publica desde raíz
-  base: '/Yugi-Sales/',
+  // Para GitHub Pages: https://marianolopez.github.io/ygo-sales/
+  base: '/ygo-sales/',
 })
