@@ -8,8 +8,33 @@ export interface SaleItem {
   cotizacion?: string
   'precio usd'?: string
   total?: string
+  type?: string
+  race?: string
+  level?: string
+  atk?: string
+  def?: string
+  attribute?: string
+  archetype?: string
+}
+
+export type Filters = {
+  type: string
+  race: string
+  level: string
+  atk: string
+  def: string
+  attribute: string
+  archetype: string
+  rarity: string
 }
 
 import itemsJson from '../../resources/db.json'
 
-export const items: SaleItem[] = itemsJson as SaleItem[]
+function parsePrecio(p: string): number {
+  return parseFloat((p || '').replace(/[$,]/g, '')) || 0
+}
+
+const rawItems = itemsJson as SaleItem[]
+export const items: SaleItem[] = [...rawItems].sort(
+  (a, b) => parsePrecio(b.precio) - parsePrecio(a.precio)
+)
