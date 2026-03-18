@@ -5,10 +5,20 @@ import { ItemCard } from '../components/ItemCard'
 import { items } from '../data/items'
 import type { SaleItem, Filters } from '../data/items'
 
-type SortOption = 'default' | 'name-asc' | 'name-desc' | 'price-asc' | 'price-desc'
+type SortOption = 'default' | 'name-asc' | 'name-desc' | 'price-asc' | 'price-desc' | 'date-desc' | 'date-asc'
 
 function parsePrecio(precio: string): number {
   return parseFloat((precio || '').replace(/[$,]/g, '')) || 0
+}
+
+function precioForItem(item: SaleItem): string {
+  return (item.total ?? item.precio ?? '').trim()
+}
+
+function parseDate(s: string): number {
+  if (!s) return 0
+  const t = Date.parse(s)
+  return Number.isNaN(t) ? 0 : t
 }
 
 function uniqueValues(items: SaleItem[], key: keyof SaleItem): string[] {
@@ -48,9 +58,13 @@ function filterAndSortItems(
       case 'name-desc':
         return (b.nombre ?? '').localeCompare(a.nombre ?? '')
       case 'price-asc':
-        return parsePrecio(a.precio) - parsePrecio(b.precio)
+        return parsePrecio(precioForItem(a)) - parsePrecio(precioForItem(b))
       case 'price-desc':
-        return parsePrecio(b.precio) - parsePrecio(a.precio)
+        return parsePrecio(precioForItem(b)) - parsePrecio(precioForItem(a))
+      case 'date-desc':
+        return parseDate(b.tcg_player_updatedate ?? '') - parseDate(a.tcg_player_updatedate ?? '')
+      case 'date-asc':
+        return parseDate(a.tcg_player_updatedate ?? '') - parseDate(b.tcg_player_updatedate ?? '')
       default:
         return 0
     }
@@ -170,6 +184,8 @@ export function HomePage() {
                 <option value="name-desc">Nombre Z–A</option>
                 <option value="price-asc">Precio menor a mayor</option>
                 <option value="price-desc">Precio mayor a menor</option>
+                <option value="date-desc">Fecha de subida (más reciente)</option>
+                <option value="date-asc">Fecha de subida (más antigua)</option>
               </select>
             </label>
           </div>

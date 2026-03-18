@@ -2,12 +2,14 @@ export interface SaleItem {
   nombre: string
   rareza: string
   cantidad: string
-  precio: string
+  precio?: string
   img_url?: string
   expansion?: string
   cotizacion?: string
   'precio usd'?: string
   total?: string
+  tcg_player_ref?: string
+  tcg_player_updatedate?: string
   type?: string
   race?: string
   level?: string
@@ -35,6 +37,9 @@ function parsePrecio(p: string): number {
 }
 
 const rawItems = itemsJson as SaleItem[]
+function precioDisplay(item: SaleItem): string {
+  return (item.total ?? item.precio ?? '').trim()
+}
 export const items: SaleItem[] = [...rawItems].sort(
-  (a, b) => parsePrecio(b.precio) - parsePrecio(a.precio)
+  (a, b) => parsePrecio(precioDisplay(b)) - parsePrecio(precioDisplay(a))
 )
